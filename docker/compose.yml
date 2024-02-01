@@ -1,0 +1,16 @@
+services:
+  dyalyt_container:
+    runtime: nvidia
+    build: ./docker/training
+    image: dyalyt
+    ipc: host
+    volumes:
+      - ../:/workspace
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - $HOME/.Xauthority:/root/.Xauthority:ro
+      - /dev/video0:/dev/video0
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility,graphics,display
+      - DISPLAY=unix$DISPLAY
+    entrypoint: /bin/bash
