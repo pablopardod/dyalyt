@@ -2,7 +2,7 @@
 <h1> Do You Act Like You Talk? Exploring Pose-based Driver Action Classification with Speech Recognition Networks </h1>
 
 
-Pablo Pardo-Decimavilla</a><sup><span>1</span></sup>, 
+[Pablo Pardo-Decimavilla](https://www.linkedin.com/in/pablo-pardo-decimavilla/)</a><sup><span>1*</span></sup>, 
 Luis M. Bergasa</a><sup><span>1</span></sup>,
 Santiago Montiel-Marín</a><sup><span>1</span></sup>,
 Miguel Antunes</a><sup><span>1</span></sup>,
@@ -10,6 +10,7 @@ Miguel Antunes</a><sup><span>1</span></sup>,
 </br>
 
 <sup>1</sup> Electronics Departament, University of Alcalá (UAH), Spain.
+<sup>*</sup> Corresponding author.
 <br>
 <div>
 
@@ -77,3 +78,6 @@ Evaluation of coarse scenarios/tasks on the Drive\&Act dataset using macro-accur
 | Data | Method | Validation | Test  |
 |---------------|-----------------|---------------------|----------------|
 | Pose    | ours   | 44.60      | 43.59 |
+
+# Contact
+To contact us, please write an email to: pablo.pardod@uah.es
