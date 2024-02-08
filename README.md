@@ -40,10 +40,14 @@ docker compose run --rm dyalyt_container
 
 To train the model on [**Drive&Act**](https://driveandact.com/):
 
-Download the pose data from the [official website](https://driveandact.com/). Use the [3D Body Pose](https://driveandact.com/dataset/iccv_activities_3s.zip) and the [Activities annotations](https://driveandact.com/dataset/iccv_activities_3s.zip). Move the ```activities_3s``` folder and the ```openpose_3d``` folder to the ```driveandact``` directory. Prepare the dataset with the following command:
+The following commands will download the the [3D Body Pose](https://driveandact.com/dataset/iccv_openpose_3d.zip) and the [Activities annotations](https://driveandact.com/dataset/iccv_activities_3s.zip) from the [official site](https://driveandact.com/). The data is then processed:
 
 ```bash
 cd driveandact
+wget https://driveandact.com/dataset/iccv_openpose_3d.zip
+wget https://driveandact.com/dataset/iccv_activities_3s.zip
+unzip iccv_openpose_3d.zip
+unzip iccv_activities_3s.zip
 python3 prepare_aad.py --data --coarse_label
 cd ..
 ```
