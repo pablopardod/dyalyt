@@ -1,5 +1,6 @@
 import random
 from albumentations.core.transforms_interface import BasicTransform
+from albumentations import Compose
 from torch.nn import functional as F
 import torch
 import numpy as np
