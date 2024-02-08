@@ -1,8 +1,6 @@
 import time
 import random
 
-from pytorch_lightning.loggers import WandbLogger
-from pytorch_lightning.callbacks import ModelCheckpoint
 import wandb 
 
 import numpy as np
@@ -10,7 +8,6 @@ import pandas as pd
 
 import torch
 from torch.utils.data import DataLoader
-
 
 import pytorch_lightning as pl
 from pytorch_lightning.callbacks.early_stopping import EarlyStopping

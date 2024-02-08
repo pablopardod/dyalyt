@@ -59,6 +59,7 @@ This will create two pickle file one containing the skeleton (```skeleton.pkl```
 ## Training and Testing
 
 The following command will train the model with the hyperparameters used in the paper. After the training the the best model will be evaluated in the test set.
+> Note that results may differ slightly when training in another architecture. 
 
 ### Logging with Wandb
 
@@ -75,9 +76,17 @@ If you do not want to log
 python3 train.py
 ```
 
+## Testing
+Download the weights from [here](https://drive.google.com/file/d/1Ql0u7Kc5vSoasSXHA1b4z9y5OCyjqf6C/view?usp=sharing).<br>
+The following command will load the pre-trained weights and test it.
+```bash
+python3 test.py --weights dyalyt_coarse_0.4359.ckpt
+```
+
 # Results
 
 Evaluation of coarse scenarios/tasks on the Drive\&Act dataset using macro-accuracy of our architecture.
+> Trained in a NVIDIA GeForce RTX 2080 Ti 
 
 | Data | Method | Validation | Test  |
 |---------------|-----------------|---------------------|----------------|
