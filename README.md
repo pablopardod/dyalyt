@@ -6,7 +6,7 @@
 Luis M. Bergasa</a><sup><span>1</span></sup>,
 Santiago Montiel-Marín</a><sup><span>1</span></sup>,
 Miguel Antunes</a><sup><span>1</span></sup>,
-Ángel Llamazares</a><sup><span>1</span></sup>,
+Ángel Llamazares</a><sup><span>1</span></sup>
 </br>
 
 <sup>1</sup> Electronics Departament, University of Alcalá (UAH), Spain.
@@ -19,7 +19,16 @@ Miguel Antunes</a><sup><span>1</span></sup>,
 </div>
 </div>
 
-# Replicate paper results
+# 📖 Table of Contents
+<div align='center'>
+  <a href="#-news">News</a> | <a href="#-abstract">Abstract</a> | <a href="#-train-the-model">Train the model</a> | <a href="#-results">Results</a>
+</div>
+
+# 💥 News
+- [30/03/2024] Our paper has been accepted for the conference [IEEE IV 2024](https://ieee-iv.org/2024/).
+# 📎 Abstract
+Recognizing distractions on the road is crucial to reduce traffic accidents. Video-based networks are typically used, but are limited by their computational cost and are vulnerable to viewpoint changes. In this paper, we propose a novel approach for pose-based driver action classification using speech recognition networks, which is lighter and more viewpoint invariant that video-based one. We leverage the similarity in the encoding of information between audio and pose data, representing poses as key points over time. Our architecture is based on Squeezeformer, an efficient attention-based speech recognition network. We introduce a selection of data augmentation techniques to enhance generalization. Experiments on the Drive&Act dataset demonstrate superior performance compared to state-of-the-art methods. Additionally, we explore the integration of object information and the impact of viewpoint changes. Our results highlight the effectiveness and robustness of speech recognition networks in pose-based action classification.
+# 🚀 Train the model
 
 Follow the steps to replicate the paper results.
 
@@ -83,7 +92,7 @@ The following command will load the pre-trained weights and test it.
 python3 test.py --weights dyalyt_coarse_0.4359.ckpt
 ```
 
-# Results
+# 📈 Results
 
 Evaluation of coarse scenarios/tasks on the Drive\&Act dataset using macro-accuracy of our architecture.
 > Trained in a NVIDIA GeForce RTX 2080 Ti 
@@ -92,5 +101,5 @@ Evaluation of coarse scenarios/tasks on the Drive\&Act dataset using macro-accur
 |---------------|-----------------|---------------------|----------------|
 | Pose    | ours   | 44.60      | 43.59 |
 
-# Contact
+# 📧 Contact
 To contact us, please write an email to: pablo.pardod@uah.es
